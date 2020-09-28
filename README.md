@@ -1,2 +1,2 @@
-# Lets Study Openssl:
+# Lets Study OpenSSL:
 Study OpenSSL
