@@ -16,9 +16,15 @@ openssl rsa -text -in fd.key
 ```bash
 openssl rsa -in fd.key -pubout -out fd-public.key
 ```
-*Make sure that you don't leave out '-pubout' as the point will be neglected.*
+Make sure that you don't leave out *'-pubout'* as the point will be neglected.
 
 **Create an ECDSA key with secp256r1 Named Curve:**
 ```bash
 openssl ecparam -genkey -name secp256r1 | openssl -out ec.key -aes128
 ```
+
+**Create a CSR from key:**
+```bash
+openssl req -new -key fd.key -out fd.csr
+```
+
