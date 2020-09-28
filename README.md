@@ -18,4 +18,4 @@ openssl rsa -text -in fd.key
 ```bash
 openssl rsa -in fd.key -pubout -out fd-public.key
 ```
-+ Make sure that you don't leave out '-pubout' as the point will be neglected.
+ _Make sure that you don't leave out '-pubout' as the point will be neglected.
