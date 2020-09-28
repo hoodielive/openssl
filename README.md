@@ -13,3 +13,9 @@ openssl genrsa -aes128 -out fd.key 2048
 ```bash
 openssl rsa -text -in fd.key 
 ```
+
+**Perform a transform from 'private encrypted' to 'public':**
+```bash
+openssl rsa -in fd.key -pubout -out fd-public.key
+```
++ Make sure that you don't leave out '-pubout' as the point will be neglected.
